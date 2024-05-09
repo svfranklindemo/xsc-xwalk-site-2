@@ -43,7 +43,7 @@
         ]
       },
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "href",
         "value": "",
