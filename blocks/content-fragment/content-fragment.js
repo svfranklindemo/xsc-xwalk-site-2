@@ -1,6 +1,5 @@
 import { getConfigValue } from '../../scripts/configs.js';
 
-export default function decorate(block) {
 
   let AEM_HOST = '';
   let AEM_GRAPHQL_ENDPOINT = '';
@@ -11,6 +10,8 @@ export default function decorate(block) {
 
   alert (aem);
   alert ("hello world");
+
+export default function decorate(block) {
 
   const slugDiv = block.querySelector('div:nth-child(1)'); 
   const slugID = document.createElement('div');
