@@ -41,13 +41,6 @@
             "value": "h6"
           }
         ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "href",
-        "value": "",
-        "label": "Link"
       }
     ]
   },
@@ -86,6 +79,13 @@
         "name": "text",
         "value": "",
         "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
       },
       {
         "component": "select",
@@ -130,6 +130,25 @@
     ]
   },
   {
+    "id": "card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "section",
     "fields": [
       {
@@ -141,41 +160,22 @@
       }
     ]
   },
-  {
-    "id": "slide",
+   {
+    "id": "quote",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
+        "component": "text-area",
+        "name": "quote",
+        "value": "",
+        "label": "Quote",
+        "valueType": "string"
       },
       {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "teaser",
-    "fields": [
-      {
-        "component": "reference",
+        "component": "text-input",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "name": "author",
+        "label": "Author",
+        "value": ""
       }
     ]
   },
@@ -190,100 +190,14 @@
         "multi": false
       },
       {
-        "component": "text-area",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "content-fragment",
-    "fields": [
-      {
         "component": "text",
-        "name": "text",
-        "value": "",
-        "label": "Slug",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "featured-article",
-    "fields": [
-      {
-        "component": "text",
-        "name": "reference",
-        "value": "",
-        "label": "Reference",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "blockquote",
-    "fields": [
-      {
-        "component": "text-area",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
       },
       {
-        "component": "text",
-        "name": "author",
-        "value": "",
-        "label": "Author",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "tab",
-    "fields": [
-      {
-        "component": "text",
-        "name": "tab",
-        "value": "",
-        "label": "Tab",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "activity-detail",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "value": "",
-        "label": "Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "accordeon-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "value": "",
-        "label": "Label",
-        "valueType": "string"
-      },
-      {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
