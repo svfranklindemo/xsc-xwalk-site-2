@@ -3,6 +3,8 @@ import { getConfigValue } from '../../scripts/configs.js';
 AEM_HOST = await getConfigValue('aem-host');
 //const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
 
+alert (AEM_HOST);
+
 export default function decorate(block) {
 
   let AEM_HOST = '';
