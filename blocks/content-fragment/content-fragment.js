@@ -24,7 +24,7 @@ export default function decorate(block) {
   adventureDiv.id = "adventure-" + slug; 
   quoteDiv.replaceWith(adventureDiv);
 
-fetch(aem + '/graphql/execute.json/aem-demo-assets/adventure-by-slug;slug=' + slug)
+fetch(aem + '/graphql/execute.json/aem-demo-assets/adventures-by-slug;slug=' + slug)
 .then(response => response.json())
 .then(response => {
 
