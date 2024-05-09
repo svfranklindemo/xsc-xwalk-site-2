@@ -1,15 +1,5 @@
-function getMetadata(name) {
-  const attr = name && name.includes(':') ? 'property' : 'name';
-  const meta = [...document.querySelectorAll(`meta[${attr}="${name}"]`)]
-    .map((m) => m.content)
-    .join(', ');
-  return meta || '';
-}
-
-const AEM_HOST = getMetadata('urn:adobe:aue:system:aemconnection');
-//const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
-alert (AEM_HOST);
-
+// put your AEM publish address here
+const AEM_HOST = "https://publish-p131639-e1282833.adobeaemcloud.com";
 
 export default function decorate(block) {
 
