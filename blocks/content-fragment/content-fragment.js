@@ -5,6 +5,7 @@ AEM_HOST = await getConfigValue('aem-host');
 const aem = AEM_HOST;
 
 alert (aem);
+alert ("hello world);
 
 export default function decorate(block) {
 
