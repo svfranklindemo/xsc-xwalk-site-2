@@ -1,15 +1,17 @@
-import { getConfigValue } from '../../scripts/configs.js';
+function getMetadata(name) {
+  const attr = name && name.includes(':') ? 'property' : 'name';
+  const meta = [...document.querySelectorAll(`meta[${attr}="${name}"]`)]
+    .map((m) => m.content)
+    .join(', ');
+  return meta || '';
+}
 
 
-  let AEM_HOST = '';
-  let AEM_GRAPHQL_ENDPOINT = '';
-
-  AEM_HOST = getConfigValue('aem-host');
+  const AEM_HOST = getMetadata('urn:adobe:aue:system:aemconnection');
   //const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
-  const aem = AEM_HOST;
 
-  alert (aem);
-  alert ("hello world");
+  alert (AEM_HOST);
+  //alert ("hello world");
 
 export default function decorate(block) {
 
