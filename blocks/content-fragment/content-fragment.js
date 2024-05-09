@@ -1,16 +1,16 @@
 import { getConfigValue } from '../../scripts/configs.js';
 
-AEM_HOST = await getConfigValue('aem-host');
-//const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
-const aem = AEM_HOST;
-
-alert (aem);
-alert ("hello world);
-
 export default function decorate(block) {
 
   let AEM_HOST = '';
   let AEM_GRAPHQL_ENDPOINT = '';
+
+  AEM_HOST = await getConfigValue('aem-host');
+  //const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
+  const aem = AEM_HOST;
+
+  alert (aem);
+  alert ("hello world);
 
   const slugDiv = block.querySelector('div:nth-child(1)'); 
   const slugID = document.createElement('div');
