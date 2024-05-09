@@ -5,6 +5,8 @@ AEM_HOST = await getConfigValue('aem-host');
 
 export default function decorate(block) {
 
+  let AEM_HOST = '';
+  let AEM_GRAPHQL_ENDPOINT = '';
 
   const slugDiv = block.querySelector('div:nth-child(1)'); 
   const slugID = document.createElement('div');
