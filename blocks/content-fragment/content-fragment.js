@@ -5,7 +5,7 @@ export default function decorate(block) {
   let AEM_HOST = '';
   let AEM_GRAPHQL_ENDPOINT = '';
 
-  AEM_HOST = getConfigValue('aem-host');
+  AEM_HOST = await getConfigValue('aem-host');
   //const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
   const aem = AEM_HOST;
 
