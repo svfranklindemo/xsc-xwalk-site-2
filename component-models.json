@@ -210,6 +210,18 @@
       }
     ]
   },
+   {
+    "id": "text",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
   {
     "id": "featured-article",
     "fields": [
