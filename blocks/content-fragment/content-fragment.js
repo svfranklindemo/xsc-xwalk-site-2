@@ -1,10 +1,4 @@
-function getMetadata(name) {
-  const attr = name && name.includes(':') ? 'property' : 'name';
-  const meta = [...document.querySelectorAll(`meta[${attr}="${name}"]`)]
-    .map((m) => m.content)
-    .join(', ');
-  return meta || '';
-}
+import { getConfigValue } from '../../scripts/configs.js';
 
 AEM_HOST = await getConfigValue('aem-host');
 //const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
