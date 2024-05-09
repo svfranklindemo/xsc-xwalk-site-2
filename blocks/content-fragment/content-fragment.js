@@ -6,7 +6,8 @@ function getMetadata(name) {
   return meta || '';
 }
 
-const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
+AEM_HOST = await getConfigValue('aem-host');
+//const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
 
 export default function decorate(block) {
 
@@ -24,7 +25,7 @@ export default function decorate(block) {
   adventureDiv.id = "adventure-" + slug; 
   quoteDiv.replaceWith(adventureDiv);
 
-fetch(aem + '/graphql/execute.json/aem-demo-assets/adventures-by-slug;slug=' + slug)
+fetch(AEM_HOST + '/graphql/execute.json/aem-demo-assets/adventures-by-slug;slug=' + slug)
 .then(response => response.json())
 .then(response => {
 
