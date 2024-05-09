@@ -10,7 +10,7 @@ export default function decorate(block) {
   const aem = AEM_HOST;
 
   alert (aem);
-  alert ("hello world);
+  alert ("hello world");
 
   const slugDiv = block.querySelector('div:nth-child(1)'); 
   const slugID = document.createElement('div');
