@@ -6,12 +6,10 @@ function getMetadata(name) {
   return meta || '';
 }
 
+const AEM_HOST = getMetadata('urn:adobe:aue:system:aemconnection');
+//const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
+alert (AEM_HOST);
 
-  const AEM_HOST = getMetadata('urn:adobe:aue:system:aemconnection');
-  //const aem = "https://publish-p131639-e1282833.adobeaemcloud.com";
-
-  alert (AEM_HOST);
-  //alert ("hello world");
 
 export default function decorate(block) {
 
