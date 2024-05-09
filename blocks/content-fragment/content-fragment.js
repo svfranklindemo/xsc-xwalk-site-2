@@ -18,7 +18,7 @@ export default function decorate(block) {
   slugID.id = 'slug';
   slugDiv.replaceWith(slugID);
   slugID.innerHTML = `${slugDiv.innerHTML}`;
-  const slug = getMeta(slugID.innerHTML);
+  const slug = getMetadata(slugID.innerHTML);
   alert ("hello world");
   //const slugTemp = slugID.innerHTML.replace(/<div>|<\/div>/g, '');
   //const slug = slugTemp.match(/\S+/g);
