@@ -6,9 +6,7 @@ function getMetadata(name) {
   return meta || '';
 }
 
-//const aem = "http://localhost:4503";
 const aem = "https://publish-p107058-e1001010.adobeaemcloud.com";
-//const aem = "https://author-p131639-e1282833.adobeaemcloud.com";
 
 export default function decorate(block) {
 
@@ -26,7 +24,7 @@ export default function decorate(block) {
   adventureDiv.id = "adventure-" + slug; 
   quoteDiv.replaceWith(adventureDiv);
 
-fetch(aem + '/graphql/execute.json/aem-demo-assets/adventures-by-slug;slug=' + slug)
+fetch(aem + '/graphql/execute.json/aem-demo-assets/adventure-by-slug;slug=' + slug)
 .then(response => response.json())
 .then(response => {
 
