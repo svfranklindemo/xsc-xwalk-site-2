@@ -18,10 +18,9 @@ export default function decorate(block) {
   slugID.id = 'slug';
   slugDiv.replaceWith(slugID);
   slugID.innerHTML = `${slugDiv.innerHTML}`;
-  const slug = getMetadata(slugID.innerHTML);
-  alert ("hello world");
-  //const slugTemp = slugID.innerHTML.replace(/<div>|<\/div>/g, '');
-  //const slug = slugTemp.match(/\S+/g);
+  alert (slugID.innerHTML);
+  const slugTemp = slugID.innerHTML.replace(/<div>|<\/div>/g, '');
+  const slug = slugTemp.match(/\S+/g);
   
   const quoteDiv = block.querySelector('div:last-of-type');
   const adventureDiv = document.createElement('div');
