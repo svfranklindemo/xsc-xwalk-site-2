@@ -106,7 +106,7 @@ function buildTabs(main) {
     section.className = 'section';
     const ul = document.createElement('ul');
     ul.append(...tabs
-      .map(([, tab]) => {
+      .map(([,tab]) => {
         const li = document.createElement('li');
         li.innerText = tab;
         return li;

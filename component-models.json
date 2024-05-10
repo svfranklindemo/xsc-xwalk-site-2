@@ -3,7 +3,7 @@
     "id": "title",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "jcr:title",
         "value": "",
@@ -43,7 +43,7 @@
         ]
       },
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "href",
         "value": "",
@@ -62,7 +62,7 @@
         "multi": false
       },
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "alt",
         "value": "Default alt",
@@ -74,14 +74,14 @@
     "id": "button",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "href",
         "value": "",
         "label": "Link"
       },
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "string",
         "name": "text",
         "value": "",
@@ -114,14 +114,14 @@
     "id": "columns",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "number",
         "name": "columns",
         "value": "",
         "label": "Columns"
       },
       {
-        "component": "text-input",
+        "component": "text",
         "valueType": "number",
         "name": "rows",
         "value": "",
@@ -133,7 +133,7 @@
     "id": "section",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "name": "style",
         "value": "",
         "label": "Style",
@@ -152,7 +152,7 @@
         "multi": false
       },
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
@@ -171,7 +171,7 @@
         "multi": false
       },
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
@@ -190,14 +190,26 @@
         "multi": false
       },
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string"
       }
     ]
-  },  
+  },
+  {
+    "id": "featured-article",
+    "fields": [
+      {
+        "component": "text",
+        "name": "reference",
+        "value": "",
+        "label": "Reference",
+        "valueType": "string"
+      }
+    ]
+  },
   {
     "id": "content-fragment",
     "fields": [
@@ -210,42 +222,18 @@
       }
     ]
   },
-   {
-    "id": "text",
-    "fields": [
-      {
-        "component": "text-input",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "featured-article",
-    "fields": [
-      {
-        "component": "text-input",
-        "name": "reference",
-        "value": "",
-        "label": "Reference",
-        "valueType": "string"
-      }
-    ]
-  },
   {
     "id": "blockquote",
     "fields": [
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "quote",
         "value": "",
         "label": "Quote",
         "valueType": "string"
       },
       {
-        "component": "text-input",
+        "component": "text",
         "name": "author",
         "value": "",
         "label": "Author",
@@ -257,7 +245,7 @@
     "id": "tab",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "name": "tab",
         "value": "",
         "label": "Tab",
@@ -269,14 +257,14 @@
     "id": "activity-detail",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "name": "label",
         "value": "",
         "label": "Label",
         "valueType": "string"
       },
       {
-        "component": "text-input",
+        "component": "text",
         "name": "text",
         "value": "",
         "label": "Text",
@@ -288,14 +276,14 @@
     "id": "accordeon-item",
     "fields": [
       {
-        "component": "text-input",
+        "component": "text",
         "name": "label",
         "value": "",
         "label": "Label",
         "valueType": "string"
       },
       {
-        "component": "text-area",
+        "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
