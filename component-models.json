@@ -221,19 +221,7 @@
         "valueType": "string"
       }
     ]
-  }, 
-  {
-    "id": "stockticker",
-    "fields": [
-      {
-        "component": "text-input",
-        "name": "text",
-        "value": "",
-        "label": "Stock Ticker Symbol",
-        "valueType": "string"
-      }
-    ]
-  }, 
+  },  
   {
     "id": "blockquote",
     "fields": [
