@@ -34,7 +34,9 @@
         "featured-article",
         "blockquote",
         "article-details",
-        "content-fragment"
+        "content-fragment",
+        "demo-block"
+
       ]
     },
     {
