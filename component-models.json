@@ -221,26 +221,19 @@
         "valueType": "string"
       }
     ]
-  },
+  }, 
   {
-    "id": "demo-block",
+    "id": "stockticker",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
+        "component": "text-input",
         "name": "text",
         "value": "",
-        "label": "Text",
+        "label": "Stock Ticker Symbol",
         "valueType": "string"
       }
     ]
-  },
+  }, 
   {
     "id": "blockquote",
     "fields": [
