@@ -1,6 +1,6 @@
 var searchSymbols = document.getElementsByClassName("stockticker")[0].innerHTML
 
-var searchSymbol = searchSymbols.replace(/<div>|<\/div>/g, '');
+var searchSymbol = searchSymbols.replace(/<div data-aue-prop=\"text\" data-aue-label=\"Stock Ticker Symbol\" data-aue-type=\"text\">|<div>|<\/div>/g, '');
 
 var stockSymbol = searchSymbol.match(/\S+/g);
 
