@@ -607,7 +607,7 @@ export async function waitForLCP(lcpBlocks) {
   const hasLCPBlock = (block && lcpBlocks.includes(block.getAttribute('data-block-name')));
   if (hasLCPBlock) await loadBlock(block);
 
-  document.querySelector('body').classList.add('adventures', 'appear');
+  document.querySelector('body').classList.add('activity', 'appear');
   const lcpCandidate = document.querySelector('main img');
   await new Promise((resolve) => {
     if (lcpCandidate && !lcpCandidate.complete) {
