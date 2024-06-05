@@ -1,7 +1,6 @@
 //AEM Publish instance
 const AEM_HOST_2 = "https://publish-p131639-e1282833.adobeaemcloud.com";
 
-export default function decorate(block) {
 
 fetch('https://publish-p131639-e1282833.adobeaemcloud.com/graphql/execute.json/my-project/all-teams')
 .then(response => response.json())
@@ -17,4 +16,3 @@ fetch('https://publish-p131639-e1282833.adobeaemcloud.com/graphql/execute.json/m
 
 
 
-}
