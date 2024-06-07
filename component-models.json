@@ -245,18 +245,18 @@
     "id": "Embed",
     "fields": [
       {
-        "component": "text",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
+        "name": "picture",
+        "label": "Picture",
         "multi": false
+      },
+      {
+        "component": "text",
+        "name": "linkt",
+        "value": "",
+        "label": "Link",
+        "valueType": "string"
       }
     ]
   },  
