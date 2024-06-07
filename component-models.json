@@ -245,8 +245,8 @@
     "id": "Embed",
     "fields": [
       {
-        "component": "reference",
-        "name": "text",
+        "component": "text",
+        "name": "url",
         "value": "",
         "label": "URL",
         "valueType": "string"
