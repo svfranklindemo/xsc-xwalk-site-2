@@ -89,7 +89,7 @@ const loadScript = (url, callback, type) => {
   
   export default function decorate(block) {
     const placeholder = block.querySelector('picture');
-    //const link = block.querySelector('a').href;
+    const link = block.querySelector('a').href;
     block.textContent = '';
   
     if (placeholder) {
@@ -106,7 +106,7 @@ const loadScript = (url, callback, type) => {
         if (entries.some((e) => e.isIntersecting)) {
           observer.disconnect();
           loadEmbed(block, link);
-          //loadEmbed(block, link);
+          loadEmbed(block, link);
         }
       });
       observer.observe(block);
