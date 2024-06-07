@@ -106,6 +106,7 @@ const loadScript = (url, callback, type) => {
         if (entries.some((e) => e.isIntersecting)) {
           observer.disconnect();
           loadEmbed(block, link);
+          //loadEmbed(block, link);
         }
       });
       observer.observe(block);
