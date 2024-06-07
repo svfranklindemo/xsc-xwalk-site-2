@@ -245,7 +245,7 @@
     "id": "Embed",
     "fields": [
       {
-        "component": "text-input",
+        "component": "reference",
         "name": "text",
         "value": "",
         "label": "URL",
