@@ -253,7 +253,7 @@
       },
       {
         "component": "text",
-        "name": "linkt",
+        "name": "link",
         "value": "",
         "label": "Link",
         "valueType": "string"
