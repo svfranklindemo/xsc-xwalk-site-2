@@ -89,10 +89,14 @@ const loadScript = (url, callback, type) => {
   
   export default function decorate(block) {
     const placeholder = block.querySelector('picture');
-    const link = block.querySelector('a').href;
+    var link;
       if (!link){
         link = "https://localhost:3000";
+      } else {
+        link = block.querySelector('a').href;
       }
+
+      
     block.textContent = '';
   
     if (placeholder) {
