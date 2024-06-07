@@ -242,6 +242,18 @@
     ]
   },
   {
+    "id": "Embed",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "text",
+        "value": "",
+        "label": "URL",
+        "valueType": "string"
+      }
+    ]
+  },  
+  {
     "id": "blockquote",
     "fields": [
       {
