@@ -91,7 +91,7 @@ const loadScript = (url, callback, type) => {
     const placeholder = block.querySelector('picture');
     const link = block.querySelector('a').href;
       if (!link){
-        link = "";
+        link = "https://localhost:3000";
       }
     block.textContent = '';
   
