@@ -245,13 +245,6 @@
     "id": "Embed",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "picture",
-        "label": "Picture",
-        "multi": false
-      },
-      {
         "component": "text",
         "name": "link",
         "value": "",
