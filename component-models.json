@@ -245,11 +245,10 @@
     "id": "embed",
     "fields": [
       {
-        "component": "reference",
+        "component": "text",
         "valueType": "string",      
         "name": "url",
-        "label": "Embed",
-        "multi": false
+        "label": "Embed"
         }
     ]
   },  
