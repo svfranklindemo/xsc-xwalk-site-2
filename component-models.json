@@ -250,7 +250,7 @@
         "name": "fileReference",
         "label": "Embed",
         "multi": false
-      }
+        }
     ]
   },  
   {
