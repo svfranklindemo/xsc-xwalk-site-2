@@ -246,9 +246,9 @@
     "fields": [
       {
         "component": "text",
-        "name": "link",
+        "name": "embed",
         "value": "https//localhost:3000",
-        "label": "Link",
+        "label": "Embed",
         "valueType": "string"
       }
     ]
