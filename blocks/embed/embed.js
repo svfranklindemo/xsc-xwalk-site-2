@@ -76,7 +76,7 @@ const loadScript = (url, callback, type) => {
     ];
   
     const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));
-    const url = "https://localhost:3000"
+    const url = new URL(link);
     if (config) {
       block.innerHTML = config.embed(url, autoplay);
       block.classList = `block embed embed-${config.match[0]}`;
