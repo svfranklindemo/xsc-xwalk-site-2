@@ -247,7 +247,7 @@
       {
         "component": "text",
         "name": "link",
-        "value": "",
+        "value": "https//localhost:3000",
         "label": "Link",
         "valueType": "string"
       }
