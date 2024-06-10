@@ -245,11 +245,11 @@
     "id": "Embed",
     "fields": [
       {
-        "component": "text",
-        "name": "embed",
-        "value": "https//localhost:3000",
+        "component": "reference",
+        "valueType": "string",
+        "name": "fileReference",
         "label": "Embed",
-        "valueType": "string"
+        "multi": false
       }
     ]
   },  
