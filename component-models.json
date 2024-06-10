@@ -247,7 +247,8 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "fileReference",
+        "value": "https://localhost:300",
+        "name": "url",
         "label": "Embed",
         "multi": false
         }
