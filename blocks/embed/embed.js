@@ -76,7 +76,7 @@ const loadScript = (url, callback, type) => {
     ];
   
     const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));
-    const url = new URL(link);
+    const url = "https://localhost:3000"
     if (config) {
       block.innerHTML = config.embed(url, autoplay);
       block.classList = `block embed embed-${config.match[0]}`;
@@ -89,14 +89,8 @@ const loadScript = (url, callback, type) => {
   
   export default function decorate(block) {
     const placeholder = block.querySelector('picture');
-    var link;
-      if (!link){
-        link = "https://localhost:3000";
-      } else {
-        link = block.querySelector('a').href;
-      }
-
-      
+    var link = block.querySelector('a').href;
+          
     block.textContent = '';
   
     if (placeholder) {

@@ -242,12 +242,11 @@
     ]
   },
   {
-    "id": "Embed",
+    "id": "embed",
     "fields": [
       {
         "component": "reference",
-        "valueType": "string",
-        "value": "https://localhost:300",
+        "valueType": "string",      
         "name": "url",
         "label": "Embed",
         "multi": false
