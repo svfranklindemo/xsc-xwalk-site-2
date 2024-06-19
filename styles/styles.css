@@ -362,3 +362,13 @@ main .section[data-section-status='initialized'] {
 }
 
 
+/* Experimentation Widget Styling */
+.hlx-preview-overlay .hlx-badge {
+  padding: 1rem 2rem;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.hlx-preview-overlay .hlx-badge .hlx-popup * {
+  font-size: 14px;
+}

@@ -14,6 +14,7 @@ import {
   loadCSS,
   buildBlock,
   readBlockConfig,
+  toClassName,
 } from './lib-franklin.js';
 import {
   analyticsTrack404,
@@ -24,8 +25,17 @@ import {
   setupAnalyticsTrackingWithAlloy,
 } from './analytics/lib-analytics.js';
 
+// Define an execution context
+const pluginContext = {
+  getAllMetadata,
+  getMetadata,
+  loadCSS,  
+  sampleRUM, 
+};
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
-window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
+window.hlx.RUM_GENERATION = 'experiment-001'; // add your RUM generation information here
+
 
 // Define the custom audiences mapping for experience decisioning
 const AUDIENCES = {
@@ -209,6 +219,8 @@ async function loadEager(doc) {
   // load demo config
   await loadDemoConfig();
 
+
+
   const main = doc.querySelector('main');
   if (main) {
     await initAnalyticsTrackingQueue();
@@ -291,9 +303,9 @@ async function loadPage() {
   await loadEager(document);
   await window.hlx.plugins.load('lazy');
   await loadLazy(document);
-  const setupAnalytics = setupAnalyticsTrackingWithAlloy(document);
+  //const setupAnalytics = setupAnalyticsTrackingWithAlloy(document);
   loadDelayed();
-  await setupAnalytics;
+  //await setupAnalytics;
 }
 
 const cwv = {};
