@@ -247,7 +247,7 @@
       {
         "component": "text",
         "name": "text",
-        "value": "",
+        "value": "Type your WF here.",
         "label": "Workfront Reference",
         "valueType": "string"
       }
