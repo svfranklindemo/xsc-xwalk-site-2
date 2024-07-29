@@ -242,6 +242,18 @@
     ]
   },
   {
+    "id": "workfront-reference",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Workfront Reference",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "embed",
     "fields": [
       {
