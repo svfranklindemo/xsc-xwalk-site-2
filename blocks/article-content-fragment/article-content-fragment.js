@@ -19,11 +19,19 @@ fetch(AEM_HOST + '/graphql/execute.json/aem-demo-assets/article-by-slug;slug=' +
 .then(response => response.json())
 .then(response => {
 
-
-
 const articleTitle = response.data.articleList.items[0].title;
 document.getElementById(articleDiv.id).innerHTML += "<section><h3>"+ articleTitle + "</h3></section>";
 
+const articleAuthorFirst = response.data.articleList.items[0].authorFragment.firstName;
+const articleAuthorLast = response.data.articleList.items[0].authorFragment.lastName;
+document.getElementById(articleDiv.id).innerHTML += "<section><h4> By "+ articleAuthorFirst + " " + articleAuthorLast + "</h4></section>";
+
+for (var i=0; i<response.data.articleList.items[0].main.json.length; i++) { 
+  document.getElementById(articleDiv.id).innerHTML += "<section><p>" + response.data.articleList.items[0].main.json[i].content[0].value;  + "</p></section>";
+}
+
+const articleImage = response.data.articleList.items[0].featuredImage._dynamicUrl;
+document.getElementById(articleDiv.id).innerHTML += "<img src=" + AEM_HOST + articleImage + ">";
 
 
 })
