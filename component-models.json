@@ -223,6 +223,18 @@
     ]
   },  
   {
+    "id": "article-content-fragment",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "text",
+        "value": "",
+        "label": "Article Slug",
+        "valueType": "string"
+      }
+    ]
+  },  
+  {
     "id": "demo-block",
     "fields": [
       {
