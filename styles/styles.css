@@ -362,6 +362,11 @@ main .section[data-section-status='initialized'] {
 }
 
 
+.section.article-content-fragment-container {
+  background: white;
+}
+
+
 /* Experimentation Widget Styling */
 .hlx-preview-overlay .hlx-badge {
   padding: 1rem 2rem;
