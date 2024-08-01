@@ -25,7 +25,7 @@ export default function decorate(block) {
   articleDiv.id = "article-" + slug; 
   quoteDiv.replaceWith(articleDiv);
 
-fetch(AEM_HOST + '/graphql/execute.json/aem-demo-assets/article-by-slug;slug=' + slug)
+fetch(AEM_HOST + 'graphql/execute.json/aem-demo-assets/article-by-slug;slug=' + slug)
 .then(response => response.json())
 .then(response => {
 
