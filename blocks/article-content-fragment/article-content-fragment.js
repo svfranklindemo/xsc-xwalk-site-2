@@ -1,5 +1,15 @@
 // put your AEM publish address here
-const AEM_HOST = "https://publish-p131639-e1282833.adobeaemcloud.com";
+//const AEM_HOST = "https://publish-p131639-e1282833.adobeaemcloud.com";
+// this fixes having to manually change the AEM host here
+const AEM_HOST = checkReferrer()
+
+function checkReferrer(){
+  if (document.referrer.split('/')[2] == "localhost:3000"){
+    return "https://publish-p131639-e1282833.adobeaemcloud.com/"    
+  }else{
+    return document.referrer   
+  }
+}
 
 export default function decorate(block) {
 

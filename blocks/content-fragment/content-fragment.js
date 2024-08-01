@@ -1,5 +1,14 @@
 // put your AEM publish address here
-const AEM_HOST = "https://publish-p131639-e1282833.adobeaemcloud.com";
+// this fixes having to manually change the AEM host here
+const AEM_HOST = checkReferrer()
+
+function checkReferrer(){
+  if (document.referrer.split('/')[2] == "localhost:3000"){
+    return "https://publish-p131639-e1282833.adobeaemcloud.com/"    
+  }else{
+    return document.referrer   
+  }
+}
 
 export default function decorate(block) {
 
@@ -8,15 +17,15 @@ export default function decorate(block) {
   slugID.id = 'slug';
   slugDiv.replaceWith(slugID);
   slugID.innerHTML = `${slugDiv.innerHTML}`;
-  const slugTemp = slugID.innerHTML.replace(/<div data-aue-prop=\"text\" data-aue-label=\"Slug\" data-aue-type=\"text\">|<div>|<\/div>/g, '');
-  const slug = slugTemp.match(/\S+/g);
+  const slug = slugID.textContent.trim();
   
   const quoteDiv = block.querySelector('div:last-of-type');
   const adventureDiv = document.createElement('div');
   adventureDiv.id = "adventure-" + slug; 
   quoteDiv.replaceWith(adventureDiv);
 
-fetch(AEM_HOST + '/graphql/execute.json/aem-demo-assets/adventure-by-slug;slug=' + slug)
+
+fetch(AEM_HOST + 'graphql/execute.json/aem-demo-assets/adventure-by-slug;slug=' + slug)
 .then(response => response.json())
 .then(response => {
 
