@@ -10,8 +10,6 @@ function checkDomain(){
   }
 }
 
-alert(AEM_HOST)
-
 export default function decorate(block) {
 
   const slugDiv = block.querySelector('div:nth-child(1)'); 

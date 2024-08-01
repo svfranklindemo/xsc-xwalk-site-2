@@ -1,13 +1,13 @@
 // put your AEM publish address here
 //const AEM_HOST = "https://publish-p131639-e1282833.adobeaemcloud.com";
 // this fixes having to manually change the AEM host here
-const AEM_HOST = checkReferrer()
+const AEM_HOST = checkDomain()
 
-function checkReferrer(){
-  if (document.referrer.split('/')[2] == "localhost:3000"){
+function checkDomain(){
+  if (window.location.hostname.includes("hlx.page") || window.location.hostname.includes("localhost")){
     return "https://publish-p131639-e1282833.adobeaemcloud.com/"    
   }else{
-    return document.referrer   
+    return window.location.origin 
   }
 }
 
@@ -25,7 +25,7 @@ export default function decorate(block) {
   articleDiv.id = "article-" + slug; 
   quoteDiv.replaceWith(articleDiv);
 
-fetch(AEM_HOST + 'graphql/execute.json/aem-demo-assets/article-by-slug;slug=' + slug)
+fetch(AEM_HOST + '/graphql/execute.json/aem-demo-assets/article-by-slug;slug=' + slug)
 .then(response => response.json())
 .then(response => {
 
