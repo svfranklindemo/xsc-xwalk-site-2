@@ -6,7 +6,7 @@ function checkReferrer(){
   if (document.referrer.split('/')[2] == "localhost:3000"){
     return "https://publish-p131639-e1282833.adobeaemcloud.com/"    
   }else{
-    return document.referrer   
+    return window.location.origin 
   }
 }
 
