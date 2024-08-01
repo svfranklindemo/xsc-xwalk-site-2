@@ -3,13 +3,14 @@
 const AEM_HOST = checkReferrer()
 
 function checkReferrer(){
-  if (document.referrer.split('/')[2] == "localhost:3000"){
+  if (window.location.hostname == "localhost:3000"){
     return "https://publish-p131639-e1282833.adobeaemcloud.com/"    
   }else{
     return window.location.origin 
   }
 }
 
+alert(window.location.hostname)
 alert(AEM_HOST)
 
 export default function decorate(block) {
