@@ -40,7 +40,7 @@ for (var i=0; i<response.data.articleList.items[0].main.json.length; i++) {
   document.getElementById(articleDiv.id).innerHTML += "<section><p>" + response.data.articleList.items[0].main.json[i].content[0].value;  + "</p></section>";
 }
 
-const articleImage = response.data.articleList.items[0].featuredImage._dynamicUrl;
+const articleImage = response.data.articleList.items[0].featuredImage._path;
 document.getElementById(articleDiv.id).innerHTML += "<img src=" + AEM_HOST + articleImage + ">";
 
 
