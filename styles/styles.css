@@ -365,6 +365,8 @@ main .section[data-section-status='initialized'] {
 .section.article-content-fragment-container {
   background: white;
   width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
