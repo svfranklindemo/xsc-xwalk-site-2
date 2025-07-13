@@ -31,6 +31,8 @@
         "carousel",
         "accordion",
         "teaser",
+        "dm-asset",
+        "dm-template",
         "featured-article",
         "blockquote",
         "article-details",
